@@ -17,6 +17,9 @@
 
 package geno;
 
+import geno.world.biome.BiomeGenSkeletonCoast;
+import net.minecraft.world.biome.BiomeGenBase;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PostInit;
@@ -24,16 +27,19 @@ import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = "GMC", name = "G3N0's Mod Compendium", version = "0.0.1")
 public class G3N0Core
 {
     public static G3N0Core instance;
+    
+    public static final BiomeGenBase BIOME_SKELETON_COAST = (new BiomeGenSkeletonCoast(33)).setBiomeName("Skeleton Coast").setMinMaxHeight(0.1f, 0.1f);
 
     @PreInit
     public void preInit(FMLPreInitializationEvent event)
     {
-        
+        GameRegistry.addBiome(BIOME_SKELETON_COAST);
     }
     
     @Init
