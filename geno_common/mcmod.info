@@ -1,0 +1,18 @@
+[
+{
+  "modid": "GMC",
+  "name": "G3N0's Mod Compendium",
+  "description": "A mod used to let loose my idiocracy",
+  "version": "",
+  "credits": "Created by G3N0",
+  "logoFile":,
+  "mcversion": "",
+  "url":,
+  "updateUrl": "",
+  "authors": [ "G3N0" ],
+  "parent":"",
+  "screenshots": [],
+  "dependencies": [
+         "mod_MinecraftForge"
+]
+}
